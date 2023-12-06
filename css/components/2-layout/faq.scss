@@ -1,0 +1,126 @@
+.faq {
+  padding: 140px 0 224px;
+  position: relative;
+  &__inner {
+    padding: 150px 55px 170px;
+    background-color: #f7f8fb;
+    border-radius: 100px;
+    &-title {
+      max-width: 524px;
+      margin: 0 auto 130px;
+      text-align: center;
+    }
+    &-content {
+      max-width: 968px;
+      margin: 0 auto;
+    }
+  }
+  &Item {
+    margin-bottom: 65px;
+    &:last-child {
+      margin: 0;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+  .arrow {
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    &.top {
+      bottom: unset;
+      top: 0;
+    }
+  }
+}
+// 1180px
+@mixin faq-xlg-xxlg {
+  .faq {
+    padding: 120px 0 170px;
+    &__inner {
+      padding: 115px 55px 100px;
+      border-radius: 70px;
+      &-title {
+        margin-bottom: 100px;
+      }
+    }
+    .arrow {
+      bottom: 60px;
+    }
+  }
+}
+// 840px
+@mixin faq-md-lg-extra {
+  .faq {
+    padding: 140px 0;
+    .arrow {
+      bottom: 50px;
+    }
+  }
+}
+// 650px
+@mixin faq-sm-md-extra {
+  .faq {
+    background-color: #f7f8fb;
+    padding: 70px 0 130px;
+    &__inner {
+      padding: 0;
+      &-title {
+        text-align: start;
+        max-width: unset;
+        margin-bottom: 70px;
+      }
+    }
+    .arrow {
+      background-color: #f7f8fb;
+      bottom: 42px;
+      &.top {
+        display: none;
+      }
+    }
+  }
+}
+// 540px
+@mixin faq-xsm-sm {
+  .faq {
+    &__inner {
+        &-title {
+            margin-bottom: 50px;
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    &Item {
+        background-color: $white;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 16px;
+            line-height: 25px;
+            padding: 22px 25px 22px 30px;
+            margin: 0;
+            cursor: pointer;
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            padding: 0 25px 0 30px;
+            max-height: 0;
+            opacity: 0;
+            transition: .4s ease;
+            overflow: hidden;
+            &.active {
+                padding: 0 25px 25px 30px;
+                max-height: 300px;
+                opacity: 1;
+            }
+        }
+    }
+  }
+}

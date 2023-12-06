@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="265" height="72" viewBox="0 0 265 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1600" data-name="Rectangle 1600" width="36.743" height="33" fill="#1e3550"/>
+    </clipPath>
+  </defs>
+  <g id="Group_747" data-name="Group 747" transform="translate(-266 -59)">
+    <text id="Dr._med._Marleen_Arnolds_Gynäkologie_Geburtshilfe" data-name="Dr. med. 
+Marleen Arnolds
+Gynäkologie / Geburtshilfe" transform="translate(330 78)" fill="#1e3550" font-size="18" font-family="SegoeUI-Bold, Segoe UI" letter-spacing="-0.025em" font-weight="700"><tspan x="0" y="0">Dr. med. </tspan><tspan x="0" y="24">Marleen Arnolds</tspan><tspan fill="#ff6766" font-family="SegoeUI, Segoe UI" font-weight="400"><tspan x="0" y="48">Gynäkologie / Geburtshilfe</tspan></tspan></text>
+    <g id="Group_677" data-name="Group 677" transform="translate(266 66)">
+      <g id="Group_551" data-name="Group 551" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_1015" data-name="Path 1015" d="M53.469,28.025c0-.014,0-.028-.008-.042L46.011,2.749c0-.009-.007-.017-.011-.026a3.642,3.642,0,0,0-7.021-.095L31.293,28.19a3.718,3.718,0,0,0,2.431,4.63,3.6,3.6,0,0,0,1.068.162,3.665,3.665,0,0,0,3.5-2.628L45.335,6.926,50.81,25.47a3.718,3.718,0,0,0-.942-.125,3.828,3.828,0,1,0,3.774,3.828,3.876,3.876,0,0,0-.173-1.147" transform="translate(-16.899 0)" fill="#1e3550"/>
+        <path id="Path_1016" data-name="Path 1016" d="M12.413.163A3.648,3.648,0,0,0,7.847,2.629L.161,28.19A3.718,3.718,0,0,0,2.592,32.82a3.615,3.615,0,0,0,1.068.162,3.665,3.665,0,0,0,3.5-2.628L14.844,4.793A3.718,3.718,0,0,0,12.413.163" transform="translate(0 0)" fill="#1e3550"/>
+      </g>
+    </g>
+  </g>
+</svg>

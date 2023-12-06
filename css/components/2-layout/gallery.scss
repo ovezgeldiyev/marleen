@@ -1,0 +1,246 @@
+.gallery {
+  position: relative;
+  padding: 140px 0 250px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 820px;
+    content: "";
+    background-color: #f7f8fb;
+    pointer-events: none;
+  }
+  &__inner {
+    &-title {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 95px;
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 65px 0;
+      &:last-of-type {
+        margin-top: 0;
+      }
+    }
+    &-col {
+      width: calc(50% - 25px);
+      max-width: 670px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &Image {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56%;
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+    &.big {
+      padding-bottom: 158%;
+      height: 100%;
+    }
+    &.sm {
+      padding-bottom: 75%;
+    }
+    &.rev {
+      border-radius: 100px 0 0 100px;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fullImage;
+    }
+  }
+  &Title {
+    background-color: $main;
+    border-radius: 0 100px 100px 0;
+    color: $white;
+    padding-bottom: 75%;
+    position: relative;
+    margin-top: 20px;
+    &.light {
+      background-color: $primary;
+      border-radius: 100px 0 0 100px;
+      h3 {
+        left: unset;
+        right: 80px;
+        text-align: end;
+      }
+    }
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      transform: translateY(-50%);
+      width: calc(100% - 120px);
+    }
+  }
+  .arrow {
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+// 1180px
+@mixin gallery-xlg-xxlg {
+  .gallery {
+    padding: 120px 0 190px;
+    &__inner {
+      &-title {
+        max-width: 804px;
+        margin-bottom: 60px;
+        h2 {
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
+      &-row {
+        margin: 48px 0;
+      }
+    }
+    &Image {
+      border-radius: 0 70px 70px 0;
+      &.rev {
+        border-radius: 70px 0 0 70px;
+      }
+    }
+    &Title {
+      border-radius: 0 70px 70px 0;
+      &.light {
+        border-radius: 70px 0 0 70px;
+        h3 {
+          right: 55px;
+        }
+      }
+      h3 {
+        left: 55px;
+        font-size: 40px;
+        line-height: 56px;
+        width: calc(100% - 100px);
+      }
+    }
+    .arrow {
+      bottom: 60px;
+    }
+  }
+}
+// 930px
+@mixin gallery-md-lg {
+  .gallery {
+    padding: 80px 0 150px;
+    &__inner {
+
+      &-col {
+        width: calc(50% - 22px);
+      }
+      &-row {
+        margin: 40px 0;
+      }
+    }
+    &Image {
+      border-radius: 0 50px 50px 0;
+      min-height: 440px;
+      &.rev {
+        border-radius: 50px 0 0 50px;
+      }
+      &.sm {
+        min-height: unset;
+      }
+    }
+    &Title {
+      border-radius: 0 50px 50px 0;
+      &.light {
+        border-radius: 50px 0 0 50px;
+        h3 {
+          right: 40px;
+        }
+      }
+      h3 {
+        left: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        width: calc(100% - 70px);
+      }
+    }
+  }
+}
+// 840px
+@mixin gallery-md-lg-extra {
+  .gallery {
+  }
+}
+// 750px
+@mixin gallery-sm-md {
+  .gallery {
+    &__inner {
+      &-row {
+        margin: 30px 0;
+      }
+      &-col {
+        width: calc(50% - 12px);
+      }
+    }
+    &Image {
+      min-height: 323px;
+      &.sm {
+        min-height: 140px;
+      }
+      &.big {
+        min-height: unset;
+      }
+    }
+    &Title {
+      min-height: 140px;
+      &.light {
+        h3 {
+          right: 26px; 
+        }
+      }
+      h3 {
+        left: 26px;
+        font-size: 24px;
+        line-height: 30px;
+        width: calc(100% - 50px);
+      }
+    }
+  }
+}
+// 540px
+@mixin gallery-xsm-sm {
+  .gallery {
+    padding: 65px 0 140px;
+    .auto__container {
+      padding: 0;
+    }
+    &__inner {
+      &-title {
+        text-align: start;
+        padding: 0 26px;
+        margin-bottom: 50px;
+        h2 {
+            font-size: 18px;
+            line-height: 29px;
+          }
+      }
+    }
+    &Title {
+      h3 {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    .arrow {
+      bottom: 50px;
+    }
+  }
+}

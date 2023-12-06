@@ -1,0 +1,246 @@
+// 1600px
+@include xxxxxlg-xxxxxxlg {
+  .warn {
+    padding: 20px 24px 20px 30px;
+    &__icon {
+      margin-right: 22px;
+    }
+    p {
+      width: calc(100% - 54px);
+    }
+  }
+  @include nav-xxxxxlg-xxxxxxlg;
+}
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  .name {
+    &.big {
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+  @include team-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  // @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  h1 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .main {
+    padding-top: 126.58px;
+  }
+  .name {
+    &.big {
+      h3 {
+        font-size: 24px;
+      }
+    }
+    h3 {
+      font-size: 21px;
+    }
+  }
+  .meet {
+    width: 110px;
+    padding: 14px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+      max-width: 80px;
+    }
+    h6 {
+      text-align: center;
+      b {
+        display: none;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  .warn {
+    left: 55px;
+  }
+  .arrow {
+    width: 42px;
+    height: 42px;
+    img {
+      max-width: 10px;
+    }
+  }
+  .button {
+    padding: 13px 20px;
+  }
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include practice-xlg-xxlg;
+  @include service-xlg-xxlg;
+  @include faq-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include team-xlg-xxlg;
+  @include gallery-xlg-xxlg;
+  @include contact-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modall {
+    padding: 30px;
+    &__inner {
+      padding: 70px 45px 45px;
+      min-height: unset;
+      &-close {
+        top: 20px;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  @include practice-lg-xlg;
+  @include service-lg-xlg;
+  @include team-lg-xlg;
+  @include contact-lg-xlg;
+}
+// 930px
+@include md-lg {
+  .button {
+    font-size: 14px;
+    padding: 14px 17px;
+  }
+  .name {
+    &.big {
+      h3 {
+        font-size: 22px;
+      }
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+  @include header-md-lg;
+  @include nav-md-lg;
+  @include hero-md-lg;
+  @include practice-md-lg;
+  @include service-md-lg;
+  @include about-md-lg;
+  @include team-md-lg;
+  @include gallery-md-lg;
+  @include contact-md-lg;
+}
+// 840px
+@include md-lg-extra {
+  .meet {
+    display: none;
+  }
+  .warn {
+    bottom: 48px;
+  }
+
+  @include hero-md-lg-extra;
+  @include service-md-lg-extra;
+  @include faq-md-lg-extra;
+  @include about-md-lg-extra;
+  @include footer-md-lg-extra;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 26px;
+  }
+  .warn {
+    bottom: 43px;
+    left: 26px;
+    padding: 14px 20px;
+    &__icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 20px;
+    }
+    p {
+      width: calc(100% - 45px);
+      font-size: 14px;
+      line-height: 20px;
+      min-width: 145px;
+    }
+  }
+  .main {
+    padding-top: 65.83px;
+  }
+  @include header-sm-md;
+  @include nav-sm-md;
+  @include hero-sm-md;
+  @include practice-sm-md;
+  @include service-sm-md;
+  @include team-sm-md;
+  @include gallery-sm-md;
+  @include contact-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  .name {
+    &.big {
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+  @include hero-sm-md-extra;
+  @include practice-sm-md-extra;
+  @include service-sm-md-extra;
+  @include service-sm-md-extra;
+  @include faq-sm-md-extra;
+  @include about-sm-md-extra;
+  @include contact-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  .modall {
+    padding: 20px;
+    &__inner {
+      padding: 55px 25px 30px;
+      min-height: unset;
+      border-radius: 25px;
+      &-close {
+        top: 15px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+  @include practice-xsm-sm;
+  @include faq-xsm-sm;
+  @include team-xsm-sm;
+  @include gallery-xsm-sm;
+  @include contact-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  // @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}

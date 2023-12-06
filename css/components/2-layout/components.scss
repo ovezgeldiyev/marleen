@@ -1,0 +1,268 @@
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.025em;
+  line-height: 51px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 37px;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+p {
+}
+.main {
+  overflow: hidden;
+  padding-top: 184px;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: $mainFont;
+  font-weight: 700;
+  color: $main;
+  padding: 14px 26px;
+  border: 1px solid $main;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 100px;
+  &.secondary {
+    color: $white;
+    border-color: $white;
+    &:hover {
+      opacity: 1;
+      background-color: $white;
+      color: $main;
+    }
+  }
+  &:hover {
+    opacity: 1;
+    background-color: $main;
+    color: $white;
+  }
+}
+.meet {
+  position: absolute;
+  z-index: 3;
+  bottom: 12%;
+  right: 0;
+  padding: 20px 35px 20px 25px;
+  background-color: #3878c4;
+  border-radius: 24px 0 0 24px;
+  &__logo {
+    width: 100%;
+    max-width: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 700;
+    color: $white;
+    b {
+      font-weight: 700;
+    }
+    span {
+      display: none;
+    }
+  }
+}
+.warn {
+  position: absolute;
+  left: 80px;
+  bottom: 12%;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  border-radius: 25px;
+  padding: 25px 40px;
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    width: calc(100% - 62px);
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 172px;
+    a {
+      display: block;
+      text-decoration: underline;
+      &:hover {
+        opacity: 1;
+        color: $red;
+      }
+    }
+  }
+}
+.stamp {
+  width: 172px;
+  height: 172px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+.name {
+  &.light {
+    h3 {
+      font-size: 21px;
+      color: $white;
+      span {
+        color: $white;
+      }
+    }
+  }
+  &.big {
+    h3 {
+      font-size: 36px;
+    }
+  }
+  h3 {
+    font-size: 29px;
+    line-height: 130%;
+    letter-spacing: -0.025em;
+    b {
+      display: block;
+      font-weight: 700;
+    }
+    span {
+      font-weight: 400;
+      color: $red;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: $white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  &:hover {
+    opacity: 1;
+    box-shadow: 0px 6px 10px 0px #00000021;
+  }
+  img {
+    width: 100%;
+    max-width: 14px;
+  }
+}
+.modall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  padding: 40px;
+  display: none;
+  z-index: 9999;
+  &.active {
+    display: flex;
+    animation: fadeIn 0.4s;
+  }
+  &__inner {
+    background-color: $white;
+    border-radius: 40px;
+    padding: 70px 40px 30px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+    margin: auto;
+    position: relative;
+    &-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #efefef;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      &::before {
+        width: 50%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: #333;
+      }
+      &::after {
+        width: 50%;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: #333;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      b {
+        font-weight: 500;
+        color: $black;
+      }
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
